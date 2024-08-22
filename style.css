@@ -1,0 +1,81 @@
+:root {
+    --gris: #1c1f22;
+    --celeste: #2f80ed;
+    --verde: #1e8449;
+    --claro: #fefeff;
+    --rojo: #b9331b;
+}
+
+body {
+    margin: 0;
+    padding: 10%;
+    min-height: 100%;
+    width: auto;
+    background-color: var(--gris);
+    color: var(--claro);
+    display: flex;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.editable {
+    background-color: var(--claro);
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.editable > textarea {
+    height: 100%;
+    border: none;
+    overflow: auto;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    resize: none; 
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.btts {
+    display: flex;
+}
+
+.button {
+    appearance: none;
+    backface-visibility: hidden;
+    box-shadow: none;
+    box-sizing: border-box;
+    color: var(--claro);
+    cursor: pointer;
+    display: inline-block;
+    padding: 20px;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    width: 33%;
+    margin: 5px;
+}
+
+.bgc-blue {
+    background-color: var(--celeste) ;
+}
+
+.bgc-green {
+    background-color: var(--verde);
+}
+
+.bgc-red {
+    background-color: var(--rojo);
+}
+
+.bgc-grey {
+    background-color: var(--gris);
+    cursor: no-drop;
+}
+
