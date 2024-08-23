@@ -5,21 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
     <title>Encriptador</title>
 </head>
 
 <body>
-
-    <div class="editable">
-        <div class="btts">
-            <button id="Encriptador" onclick="transmutar()"> Encriptar </button>
-            <button class="button bgc-red" onclick="reiniciar()"> Limpiar </button>
-            <button id="Desencriptador" onclick="transmutar()"> Desencriptar </button>
-        </div>
-        <textarea id="__mensaje"></textarea>
+    <div class="canvas-container">
+        <canvas id="canvas" class="canvas"></canvas>
     </div>
-
+    <div class="container">
+        <div class="editable">
+            <div class="edit-header"><h1> Encriptador</h1></div>
+            <div class="btts">
+                <button id="Encriptador" onclick="transmutar()"> Encriptar </button>
+                <button class="button bgc-green" onclick="reiniciar()"> Limpiar </button>
+                <button id="Desencriptador" onclick="transmutar()"> Desencriptar </button>
+            </div>
+            <textarea id="__mensaje" placeholder="Escriba aqui el texto que desea encriptar"></textarea>
+            <button class="copy" onclick="copyToClipboard()"></button>
+        </div>
+        
+    </div>
     <script src="script.js"></script>
 </body>
 
