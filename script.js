@@ -37,10 +37,10 @@ var ctx = canvas.getContext('2d');
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
-var letters = 'ラドクリフマラソンわたしワタシんょンョたばこタバコとうきょうトウキョウ ';
+var letters = 'ぁあぃいぅうぇえぉお かがきぎくぐけげこご ざしじすずせぜそぞた だちぢっつづてでとど なにぬねのはばぱひび ぴふぶぷへべぺほぼゐ わゎろれるりらよょゆ ゅやゃもめむみまぽゑ をんゔゕゖゝゞゟ゠ァ アィイゥウズスジシザサ ゴコゲケグクギキガカ オォエェセゼソゾタダ チヂッツヅテデトドナ ニヌネノモメムミマポボ ホペベヘプブフピビヒ パバハャヤュユョヨラリ ルレロヮワヰヱヲンヴヵ ヶヷヸヹヺ・ーヽヾヿ㍐ 々〒〜〃〆';
 letters = letters.split('');
 
-var fontSize = 10,
+var fontSize = 30,
     columns = canvas.width / fontSize;
 
 var drops = [];
@@ -51,6 +51,7 @@ for (var i = 0; i < columns; i++) {
 function draw() {
   ctx.fillStyle = 'rgba(0, 0, 0, 0.1)';
   ctx.fillRect(0, 0, canvas.width, canvas.height);
+  ctx.font = 'bold 20px Arial';
   for (var i = 0; i < drops.length; i++) {
     var text = letters[Math.floor(Math.random() * letters.length)];
     ctx.fillStyle = '#0f0';
